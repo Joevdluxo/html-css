@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+<div>
+        <h1>imagem dinâmicas</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/Imagem-pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/Imagem-media.png" type="image/png">
+        <img src="imagens/Imagem-grande.png" alt="imagem flexivel">
+    </picture>
+</div>
+
+<div>
+<h1>Reproduzindo audios em HTML5</h1>
+    <p>Por preocaução os audios devem ter arquivos de varios formatos para evitar que não abram em certos navegadores</p>
+    
+<audio preload="metadata" controls>
+    <source src="audios/AHH.mp3" type="audio/mpeg">
+    <source src="audios/AHH.ogg" type="audio/ogg">
+    <source src="audios/AHH.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não é capaz de reproduzir os audios</p>
+</audio>
+    
+<audio controls loop>
+    <source src="audios/UAAH.mp3" type="audio/mpeg">
+</audio>
+</div>
+<div>
+<h1>Videos</h1>
+    <h2>Vídeos podem ser hospedados <strong>localmente</strong></h2>
+    
+<video preload="metadata" muted controls width="600px" poster="imagens/thumb-vdog.png">
+    <source src="videos/8473684-hd_1280_720_50fps.mp4" type="video/mp4">
+</video>
+    <h2>Ou em servidores <strong>externos</strong>, como <strong>youtube</strong> ou <strong>vimeo</strong></h2>
+<h3>Para servidores externos:</h3>
+<p>acesse o youtube, entre no vídeo que queira usar, clique em compartilhar e então em <strong>incorporar</strong> e copie e cole o código</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_f0XcVwNa8A?si=DTfdWXJqtnsN7SX_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+        
+</body>
+</html>

@@ -1,0 +1,12 @@
+@charset "utf8";
+    
+    
+    h2, p{
+        color: #dad7cd;
+    }
+
+    body{
+        height: 100%;
+        background-image:radial-gradient(circle,#588157, #3a5a40, #344e41);
+        background-attachment: fixed;
+    }
